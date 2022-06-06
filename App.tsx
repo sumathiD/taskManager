@@ -32,6 +32,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './taskmgr/screens/Home';
 import Faciligo from './taskmgr/screens/samples/Faciligo';
 import Hometask from './taskmgr/screens/Hometask';
+import Ongoing from './taskmgr/screens/Ongoing';
 
 const Stack = createNativeStackNavigator();
 
@@ -53,6 +54,7 @@ const App = () => {
         <Stack.Screen name="home" component={Home} />
         <Stack.Screen name="workorder" component={Faciligo} />
         <Stack.Screen name="hometask" component={Hometask} />
+        <Stack.Screen name="ongoing" component={Ongoing} />
       </Stack.Navigator>
     </NavigationContainer>
     

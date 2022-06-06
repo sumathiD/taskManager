@@ -14,12 +14,13 @@ function Card(props:any) {
 const styles = StyleSheet.create ({
     card: {
         borderRadius: 10,
-        elevation: 5,
-        backgroundColor: '#610481',
+        elevation: 10,
+        backgroundColor: '#6660CC',
         shadowColor: "#333",
         shadowOffset: {width: 1, height:1},
         shadowOpacity: 0.3,
         shadowRadius: 2,
+        marginVertical: 10,
     },
     cardContent: {
         fontSize: 25,
