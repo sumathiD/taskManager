@@ -2,11 +2,13 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-function Card(props:any) {
+function ActiveDayCard(props:any) {
   return (
     <View style={styles.card}>
             <View style={styles.cardContent}>
+            <View style={styles.cardOuter}>
                 {props.children}
+                </View>
             </View>
     </View>
   )
@@ -14,7 +16,7 @@ function Card(props:any) {
 
 const styles = StyleSheet.create ({
     card: {
-        borderRadius: 10,
+        borderRadius: 25,
         elevation: 10,
         backgroundColor: '#6660CC',
         shadowColor: "#333",
@@ -25,9 +27,15 @@ const styles = StyleSheet.create ({
     },
     cardContent: {
         fontSize: 25,
-        marginVertical: 15,
+        marginVertical: 25,
         marginHorizontal: 15,
     },
+    cardOuter: {
+        flexDirection: 'column', 
+        width: 30, 
+        justifyContent: 'center', 
+        alignItems:'center'
+      }
 })
 
-export default Card
+export default ActiveDayCard

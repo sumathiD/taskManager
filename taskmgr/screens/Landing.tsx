@@ -3,7 +3,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient'
 
-function Landing(props) {
+function Landing(props: any) {
     // const navigation = useNavigation();
     return (
         <LinearGradient colors={['#f1f1f1', '#8693ab']} style={styles.linearGradient}>
